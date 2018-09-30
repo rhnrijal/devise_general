@@ -24,3 +24,4 @@ Things you may want to cover:
 * ...
 # devise_general
 # Talent
+# Talent2
