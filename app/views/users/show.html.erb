@@ -1,6 +1,7 @@
-<h2>Profile of <%=@user.name %> </h2>
 
+<h2>Profile of <%=@user.name %> </h2>
 <h4><%= link_to  "Edit Profile", edit_user_path(@user)%></h4>
+
 
 <label>Email:</label><%= @user.email %><br/>
 <label>Student ID:</label><%= @user.studentid %><br/>

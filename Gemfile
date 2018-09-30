@@ -10,6 +10,8 @@ gem 'pg', '>= 0.18', '< 2.0'
 
 #devise gem
 gem 'devise'
+gem 'jquery-tokeninput-rails'
+
 
 # Use Puma as the app server
 gem 'puma', '~> 3.11'

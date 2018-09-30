@@ -1,11 +1,15 @@
 class UsersController < ApplicationController
   before_action :authenticate_user!, only: [:edit, :update]
-
   before_action :set_user
 
   def index
-
-  end
+      @user = User.all
+      if params[:search]
+        @user = User.search(params[:search]).order("created_at DESC")
+      else
+        @user = User.all.order('created_at DESC')
+      end
+    end
 
   def show
     @user = User.find(params[:id])

@@ -1,2 +1,12 @@
-<h1>Root page</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<h1>eTalent Search</h1>
+<p>Helping SU in finding students as per their requirements</p>
+<%= form_tag(users_path, :method => "get", id: "search-form") do %>
+  <%= text_field_tag :search, params[:search], placeholder: "Search users" %>
+  <%= submit_tag "Search" %>
+
+    <% if @user.present? %>
+    <%= render @user %>
+  <% else %>
+    <p>There are no posts containing the term(s) <%= params[:search] %>.</p>
+  <% end %>
+<% end %>
