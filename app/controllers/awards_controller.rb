@@ -1,8 +1,12 @@
 class AwardsController < ApplicationController
   before_action :set_award, only: [:show, :edit, :update, :destroy]
-
+  before_action :set_talent, only: [:create]
   # GET /awards
   # GET /awards.json
+  def set_talent
+    @talent = Talent.find(params[:talent_id])
+  end
+
   def index
     @awards = Award.all
   end

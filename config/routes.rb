@@ -4,6 +4,11 @@ Rails.application.routes.draw do
     resources :talents
   end
 
+  resources :talents do
+    resources :awards
+  end
+
+
   resources :students
   resources :awards
   resources :talents

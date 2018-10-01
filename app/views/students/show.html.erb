@@ -48,14 +48,14 @@
 <h2>Add Talent:</h2>
 <%= form_for([@student, @student.talents.build]) do |f| %>
   <div class="field">
-    <%= f.label :name %>
+    <%= f.label :name%>
     <br/>
-    <%= f.text_field :name %>
+    <%= f.text_field :name ,placeholder: "Eg. Academic excellence"%>
   </div>
   <div class="field">
     <%= f.label :experience %>
     <br/>
-    <%= f.text_field :experience %>
+    <%= f.text_field :experience,placeholder: "Eg. Have a King's Scholarship" %>
   </div>
   <div class="actions">
     <%= f.submit %>
