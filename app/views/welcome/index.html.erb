@@ -1,6 +1,6 @@
 <h1>eTalent Search</h1>
 <p>Helping SU in finding students as per their requirements</p>
-<%= form_tag(users_path, :method => "get", id: "search-form") do %>
+<%= form_tag(welcome_search_path, :method => "get", id: "search-form") do %>
   <%= text_field_tag :search, params[:search], placeholder: "Search users" %>
   <%= submit_tag "Search" %>
 

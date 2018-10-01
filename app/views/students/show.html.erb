@@ -1,0 +1,67 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Studentid:</strong>
+  <%= @student.studentid %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @student.name %>
+</p>
+
+<p>
+  <strong>Sex:</strong>
+  <%= @student.sex %>
+</p>
+
+<p>
+  <strong>Fos:</strong>
+  <%= @student.fos %>
+</p>
+
+<p>
+  <strong>Nationality:</strong>
+  <%= @student.nationality %>
+</p>
+
+
+
+<h2>Talents</h2>
+<table>
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @student.talents.each do |talent| %>
+    <tr>
+      <td><%= talent.name %></td>
+      <td><%= talent.experience %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+<br/>
+<h2>Add Talent:</h2>
+<%= form_for([@student, @student.talents.build]) do |f| %>
+  <div class="field">
+    <%= f.label :name %>
+    <br/>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :experience %>
+    <br/>
+    <%= f.text_field :experience %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+
+<%= link_to 'Edit', edit_student_path(@student) %> |
+<%= link_to 'Back', students_path %>
