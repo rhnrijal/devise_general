@@ -10,6 +10,11 @@ class TalentsController < ApplicationController
 
   def index
     @talents = Talent.all
+    if params[:sort_by] == "date"
+      @talents = @talents.order(:created_at)
+    else
+      @talents = @talents.order(:name)
+    end
   end
 
   # GET /talents/1
@@ -48,13 +53,6 @@ class TalentsController < ApplicationController
         format.json { render json: talent.errors, status: :unprocessable_entity }
       end
     end
-
-    if params[:sort_by] == "date"
-      @students = Student.order(:created_at)
-    else
-      @students = Student.order(:name)
-    end
-
     end
   # PATCH/PUT /talents/1
   # PATCH/PUT /talents/1.json

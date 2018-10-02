@@ -10,6 +10,11 @@ class StudentsController < ApplicationController
 
   def index
     @students = Student.all
+    if params[:sort_by] == "fos"
+      @students = Student.order(:fos)
+    else
+      @students = Student.order(:nationality)
+    end
   end
 
   # GET /students/1
@@ -41,11 +46,7 @@ class StudentsController < ApplicationController
         format.json { render json: @student.errors, status: :unprocessable_entity }
       end
     end
-    if params[:sort_by] == "fos"
-      @students = Student.order(:fos)
-    else
-      @students = Student.order(:nationality)
-    end
+
   end
 
   # PATCH/PUT /students/1

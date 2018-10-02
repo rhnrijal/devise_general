@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Talent</title>
+  <title>eTalent Search</title>
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
 
@@ -27,14 +27,15 @@
     <% if user_signed_in? %>
 
 
-      Welcome <%= link_to current_user.email, current_user %>
-      <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+      <h3> Welcome <%= current_user.email %></h3>
+      <h3> <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
       <a href="/users/edit">Edit</a><br/>
-
+      <br/>
+        <%= link_to 'New Student', new_student_path %>
       <a href="/students">View all Student</a>
       <a href="/talents">View all Talent</a>
       <a href="/awards">View all Award</a>
-
+</h3>
 
 
 

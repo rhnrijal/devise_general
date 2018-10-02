@@ -27,12 +27,13 @@
 
 
 
-<h2>Talents</h2>
+<h2>Talents & Awards</h2>
 <table>
   <thead>
   <tr>
     <th>Name</th>
     <th>Description</th>
+    <th>Awards</th>
   </tr>
   </thead>
   <tbody>
@@ -40,35 +41,16 @@
     <tr>
       <td><%= talent.name %></td>
       <td><%= talent.experience %></td>
+      <td>
+      <% talent.awards.each do |award| %>
+        <%= award.description %> (<%= award.category %>),
+      <% end %>
+      </td>
     </tr>
   <% end %>
   </tbody>
 </table>
 <br/>
-
-<h2>Awards</h2>
-<table>
-  <thead>
-  <tr>
-    <th>Description</th>
-    <th>Category</th>
-  </tr>
-  </thead>
-  <tbody>
-  <% @student.awards.each do |award| %>
-    <tr>
-      <td><%= award.description %></td>
-      <td><%= award.category %></td>
-    </tr>
-  <% end %>
-  </tbody>
-</table>
-<br/>
-
-
-
-
-<a href="/awards">View award</a><br/>
 
 <h2>Add Talent:</h2>
 <%= form_for([@student, @student.talents.build]) do |f| %>
@@ -82,23 +64,6 @@
     <br/>
     <%= f.text_field :experience,placeholder: "Eg. Have a King's Scholarship" %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
-
-<h2>Add Award:</h2>
-<%= form_for([@student, @student.awards.build]) do |f| %>
-  <div class="field">
-    <%= f.label :description %>
-    <%= f.text_field :description,placeholder: "Eg. Description of the award"%>
-  </div>
-
-  <div class="field">
-    <%= f.label :choose_a_category %>
-    <%= f.select :category, ['Academic', 'Sports', 'Music', 'Dancing', 'Singing']%>
-  </div>
-
   <div class="actions">
     <%= f.submit %>
   </div>

@@ -11,7 +11,24 @@
 </p>
 
 
+<br/>
 
+<h2>Add Award:</h2>
+<%= form_for([@talent, @talent.awards.build]) do |f| %>
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_field :description,placeholder: "Eg. Description of the award"%>
+  </div>
+
+  <div class="field">
+    <%= f.label :choose_a_category %>
+    <%= f.select :category, ['Academic', 'Sports', 'Music', 'Dancing', 'Singing']%>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
 
 <%= link_to 'Edit', edit_talent_path(@talent) %> |
 <%= link_to 'Back', talents_path %>

@@ -1,15 +1,20 @@
 class AwardsController < ApplicationController
   before_action :set_award, only: [:show, :edit, :update, :destroy]
-  before_action :set_student, only: [:create]
+  before_action :set_talent, only: [:create]
   # GET /awards
   # GET /awards.json
 
-  def set_student
-    @student = Student.find(params[:student_id])
+  def set_talent
+    @talent = Talent.find(params[:talent_id])
   end
 
   def index
     @awards = Award.all
+    if params[:sort_by] == "description"
+      @awards = @awards.order(:description)
+    else
+      @awards = @awards.order(:category)
+    end
   end
 
   # GET /awards/1
@@ -29,21 +34,16 @@ class AwardsController < ApplicationController
   # POST /awards
   # POST /awards.json
   def create
-    @award = @student.awards.create award_params
+    @award = @talent.awards.create award_params
 
     respond_to do |format|
       if @award.save
-        format.html { redirect_to @student, notice: 'Award was successfully created.' }
-        format.json { render :show, status: :created, location: @student }
+        format.html { redirect_to @talent, notice: 'Award was successfully created.' }
+        format.json { render :show, status: :created, location: @talent }
       else
         format.html { render :new }
         format.json { render json: @award.errors, status: :unprocessable_entity }
       end
-    end
-    if params[:sort_by] == "description"
-      @students = Student.order(:description)
-    else
-      @students = Student.order(:category)
     end
   end
 

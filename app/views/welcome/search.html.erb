@@ -1,16 +1,12 @@
 <h3>Student's talents</h3>
-<ul>
+<table>
+  <tr><th>Name</th><th>Talent</th><th>View Student</th></tr>
   <% @students.each do |student| %>
-    <li><%= student.name %>: <%= student.talent_name %>
-
+    <tr>
+      <td><%= student.name %></td>
+      <td><%= student.talent_name %></td>
+      <td><%= link_to 'Show', student %></td>
+    </tr>
   <% end %>
-</ul>
+</table>
 
-<h3>Talent's award</h3>
-<ul>
-  <% @talents.each do |talent| %>
-    <li><%= talent.name %>: <%= talent.awards_description%>
-
-  <% end %>
-</ul>
-<br>
