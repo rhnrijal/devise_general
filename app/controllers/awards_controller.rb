@@ -4,6 +4,7 @@ class AwardsController < ApplicationController
   # GET /awards
   # GET /awards.json
 
+
   def set_talent
     @talent = Talent.find(params[:talent_id])
   end
@@ -79,6 +80,6 @@ class AwardsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def award_params
-      params.require(:award).permit(:description, :category, :image)
+      params.require(:award).permit(:description, :category, :image, :video)
     end
 end

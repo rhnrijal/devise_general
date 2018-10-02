@@ -2,21 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="146d6b11-c294-4195-a696-554a484f5d6f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/talent.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/talent.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/awards_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/awards_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/students_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/students_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/award.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/award.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/student.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/student.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/talent.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/talent.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/awards/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/awards/_form.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/awards/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/awards/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/students/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/students/_form.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/students/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/students/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/talents/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/talents/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/welcome/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/welcome/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/welcome/search.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/welcome/search.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/award/image/6/Basketball-Certificate-Template-Free-New-Basketball-Certificate-Templates-Basketball-Awards-Professional-Of-Basketball-Certificate-Template-Free-2018-Basketball-Award-Certificate-Templates-1024x717.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/award/image/6/thumb_Basketball-Certificate-Template-Free-New-Basketball-Certificate-Templates-Basketball-Awards-Professional-Of-Basketball-Certificate-Template-Free-2018-Basketball-Award-Certificate-Templates-1024x717.jpg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -95,57 +91,66 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Gemfile" value="1" />
-          <entry key="erb" value="57" />
+          <entry key="erb" value="63" />
           <entry key="jbuilder" value="3" />
-          <entry key="rb" value="54" />
+          <entry key="rb" value="63" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="RHTML" value="57" />
-          <entry key="Ruby" value="58" />
+          <entry key="RHTML" value="63" />
+          <entry key="Ruby" value="67" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Gemfile" value="2" />
-          <entry key="erb" value="3237" />
-          <entry key="rb" value="1667" />
+          <entry key="erb" value="3563" />
+          <entry key="rb" value="1764" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="RHTML" value="3237" />
-          <entry key="Ruby" value="1669" />
+          <entry key="RHTML" value="3563" />
+          <entry key="Ruby" value="1766" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/award.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/awards/show.html.erb">
+        <entry file="file://$PROJECT_DIR$/app/models/student.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+            <state relative-caret-position="90">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/uploaders/image_uploader.rb">
+        <entry file="file://$PROJECT_DIR$/app/models/talent.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+            <state relative-caret-position="54">
+              <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/initializers/carrier_wave.rb">
+        <entry file="file://$PROJECT_DIR$/app/uploaders/video_uploader.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="38" selection-start-column="38" selection-end-column="38" />
+            <state relative-caret-position="-29">
+              <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -181,26 +186,27 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20180930155201_create_students.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20180930154208_create_awards.rb" />
-        <option value="$PROJECT_DIR$/app/models/student.rb" />
-        <option value="$PROJECT_DIR$/app/models/talent.rb" />
-        <option value="$PROJECT_DIR$/app/views/welcome/search.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/welcome_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/talents_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/talents/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/students/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/welcome/index.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/views/awards/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/award.rb" />
         <option value="$PROJECT_DIR$/app/views/talents/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/students/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/students_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/awards_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/students/show.html.erb" />
         <option value="$PROJECT_DIR$/config/initializers/carrier_wave.rb" />
         <option value="$PROJECT_DIR$/app/uploaders/image_uploader.rb" />
+        <option value="$PROJECT_DIR$/app/views/students/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/welcome/search.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/awards/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/awards_controller.rb" />
+        <option value="$PROJECT_DIR$/app/uploaders/video_uploader.rb" />
         <option value="$PROJECT_DIR$/app/views/awards/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/talent.rb" />
+        <option value="$PROJECT_DIR$/app/models/award.rb" />
+        <option value="$PROJECT_DIR$/app/models/student.rb" />
       </list>
     </option>
   </component>
@@ -216,9 +222,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="778" />
+    <option name="x" value="735" />
     <option name="y" value="27" />
-    <option name="width" value="1142" />
+    <option name="width" value="1185" />
     <option name="height" value="1053" />
   </component>
   <component name="ProjectView">
@@ -293,13 +299,9 @@
             <path>
               <item name="talent" type="b2602c69:ProjectViewProjectNode" />
               <item name="talent" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="talent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="talent" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="initializers" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="welcome" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="talent" type="b2602c69:ProjectViewProjectNode" />
@@ -460,18 +462,18 @@
       <workItem from="1538321754687" duration="52000" />
       <workItem from="1538321934905" duration="31908000" />
       <workItem from="1538468501329" duration="2210000" />
-      <workItem from="1538479419433" duration="2668000" />
+      <workItem from="1538479419433" duration="7699000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45619000" />
+    <option name="totallyTimeSpent" value="50650000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="778" y="27" width="1142" height="1053" extended-state="4" />
+    <frame x="735" y="27" width="1185" height="1053" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3649635" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28182617" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -520,7 +522,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/users1_controller.rb" />
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -593,9 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/awards/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/awards/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="539">
@@ -637,13 +635,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/talents/show.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/talent.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/welcome_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
@@ -714,27 +705,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/welcome/search.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/award.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/awards/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="30" column="12" selection-start-line="22" selection-start-column="2" selection-end-line="30" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/talents/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
@@ -752,38 +722,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/student.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/students_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="83" column="88" selection-start-line="83" selection-start-column="88" selection-end-line="83" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/students/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/awards_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
-          <caret line="81" column="67" selection-start-line="81" selection-start-column="67" selection-end-line="81" selection-end-column="67" />
         </state>
       </provider>
     </entry>
@@ -797,13 +739,6 @@
     <entry file="file://$PROJECT_DIR$/config/initializers/cookies_serializer.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/uploaders/image_uploader.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/carrier_wave.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -811,10 +746,83 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/awards/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/awards/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/welcome/search.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/students/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="831">
+          <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/uploaders/image_uploader.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/uploaders/video_uploader.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29">
+          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/awards/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+        <state relative-caret-position="342">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/awards_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/students_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="69" lean-forward="true" selection-start-line="1" selection-start-column="69" selection-end-line="1" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/talent.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/award.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/student.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>

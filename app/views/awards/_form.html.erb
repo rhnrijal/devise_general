@@ -21,7 +21,7 @@
     <%= form.select :category, ['Academic', 'Sports', 'Music', 'Dancing', 'Singing']%>
   </div>
   <div class="field">
-    <%= form.label :image %><br>
+    <%= form.label :Add_image %><br>
     <%= form.file_field :image %>
     <% if form.object.image? %>
       <%= image_tag form.object.image.url(:thumb) %>
@@ -29,7 +29,14 @@
       <%= form.check_box :remove_image %>
       <%end%>
       </div>
+
+  <div class="field">
+    <%= form.label :Add_video %><br>
+  <%=form.file_field :video%>
+  </div>
+
+
   <div class="actions">
     <%= form.submit %>
-  </div>
+    </div>
 <% end %>

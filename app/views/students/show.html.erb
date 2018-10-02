@@ -47,7 +47,7 @@
       <td><%= talent.experience %></td>
       <td>
       <% talent.awards.each do |award| %>
-        <%= award.description %> (<%= award.category %>),
+        <%= link_to award.description, awards_path(award) %> <b>Category--></b>(<%= award.category %>),
       <% end %>
       </td>
     </tr>

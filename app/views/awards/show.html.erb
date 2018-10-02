@@ -10,11 +10,14 @@
   <%= @award.category %>
 </p>
 <p>
-  <strong>Talent Award:</strong></p>
+  <strong>Talent related image:</strong></p>
 <p>
   <%= image_tag @award.image_url,width: '30%' if @award.image?  %>
 
 </p>
+<p>
+  <strong>Talent related video:</strong></p>
+      <%= video_tag @award.video_url :controls =>true %>
 
 <%= link_to 'Edit', edit_award_path(@award) %> |
 <%= link_to 'Back', awards_path %>
