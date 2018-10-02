@@ -11,6 +11,8 @@ gem 'pg', '>= 0.18', '< 2.0'
 #devise gem
 gem 'devise'
 gem 'jquery-tokeninput-rails'
+gem 'carrierwave', '~> 1.2', '>= 1.2.3'
+gem 'mini_magick', '~> 4.9', '>= 4.9.2'
 
 
 # Use Puma as the app server

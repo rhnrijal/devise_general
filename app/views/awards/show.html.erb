@@ -9,6 +9,12 @@
   <strong>Cateogry:</strong>
   <%= @award.category %>
 </p>
+<p>
+  <strong>Talent Award:</strong></p>
+<p>
+  <%= image_tag @award.image_url,width: '30%' if @award.image?  %>
+
+</p>
 
 <%= link_to 'Edit', edit_award_path(@award) %> |
 <%= link_to 'Back', awards_path %>

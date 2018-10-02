@@ -79,6 +79,6 @@ class AwardsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def award_params
-      params.require(:award).permit(:description, :category)
+      params.require(:award).permit(:description, :category, :image)
     end
 end
