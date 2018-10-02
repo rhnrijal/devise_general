@@ -17,7 +17,7 @@ class AwardsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create award" do
     assert_difference('Award.count') do
-      post awards_url, params: { award: { cateogry: @award.cateogry, description: @award.description } }
+      post awards_url, params: { award: {category: @award.category, description: @award.description } }
     end
 
     assert_redirected_to award_url(Award.last)
@@ -34,7 +34,7 @@ class AwardsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update award" do
-    patch award_url(@award), params: { award: { cateogry: @award.cateogry, description: @award.description } }
+    patch award_url(@award), params: { award: {category: @award.category, description: @award.description } }
     assert_redirected_to award_url(@award)
   end
 

@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   resources :students do
     resources :talents
+    resources :awards
   end
 
   resources :talents do

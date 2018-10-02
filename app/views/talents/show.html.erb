@@ -10,41 +10,6 @@
   <%= @talent.experience %>
 </p>
 
-<h2>Awards</h2>
-<table>
-  <thead>
-  <tr>
-    <th>Description</th>
-    <th>Cateogry</th>
-  </tr>
-  </thead>
-  <tbody>
-  <% @talent.awards.each do |award| %>
-    <tr>
-      <td><%= award.description %></td>
-      <td><%= award.cateogry %></td>
-    </tr>
-  <% end %>
-  </tbody>
-</table>
-<br/>
-<h2>Add Award</h2>
-<%= form_for([@talent, @talent.awards.build]) do |f| %>
-  <div class="field">
-    <%= f.label :description %>
-    <br/>
-    <%= f.text_field :description ,placeholder: "Eg. Description of the award  "%>
-  </div>
-  <div class="field">
-    <%= f.label :cateogry %>
-    <br/>
-    <%= f.text_field :cateogry,placeholder: "Eg. Sports, Music" %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
-
 
 
 

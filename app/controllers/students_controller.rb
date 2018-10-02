@@ -1,8 +1,13 @@
 class StudentsController < ApplicationController
   before_action :set_student, only: [:show, :edit, :update, :destroy]
-
+#  before_action :set_award, only: [:show]
   # GET /students
   # GET /students.json
+
+ # def set_award
+  #  @award = Award.find(params[:talent_id])
+  #end
+
   def index
     @students = Student.all
   end
@@ -10,6 +15,7 @@ class StudentsController < ApplicationController
   # GET /students/1
   # GET /students/1.json
   def show
+
   end
 
   # GET /students/new
@@ -34,6 +40,11 @@ class StudentsController < ApplicationController
         format.html { render :new }
         format.json { render json: @student.errors, status: :unprocessable_entity }
       end
+    end
+    if params[:sort_by] == "fos"
+      @students = Student.order(:fos)
+    else
+      @students = Student.order(:nationality)
     end
   end
 

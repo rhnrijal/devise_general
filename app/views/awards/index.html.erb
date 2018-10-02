@@ -15,7 +15,7 @@
     <% @awards.each do |award| %>
       <tr>
         <td><%= award.description %></td>
-        <td><%= award.cateogry %></td>
+        <td><%= award.category %></td>
         <td><%= link_to 'Show', award %></td>
         <td><%= link_to 'Edit', edit_award_path(award) %></td>
         <td><%= link_to 'Destroy', award, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -25,5 +25,10 @@
 </table>
 
 <br>
-
+<% if params[:sort_by] == "description" %>
+  <%= link_to "Sort by category", :action => :create, :sort_by => :category %>
+<% else %>
+  <%= link_to "Sort by description", :action => :create, :sort_by => :description %>
+<% end %>
+<br>
 <%= link_to 'New Award', new_award_path %>

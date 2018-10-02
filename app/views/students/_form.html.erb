@@ -28,12 +28,15 @@
 
   <div class="field">
     <%= form.label :fos %>
-    <%= form.text_field :fos %>
+
+    <%= form.select :fos, ['Computer Science', 'Information Management', 'School of Management', 'Energy', 'Water', 'Aqua-culture', 'TC', 'RS-GIS', 'Structure']%>
   </div>
+
+
 
   <div class="field">
     <%= form.label :nationality %>
-    <%= form.text_field :nationality %>
+    <%= form.select :nationality, ['Afghan','American','Bangladeshi','Cambodian','Chinese','French','German','Indian','Japanese','Korean', 'Malaysian','Nepali','Pakistani','Philippine','Saudi','Sri Lankan','Thai']%>
   </div>
 
   <div class="actions">

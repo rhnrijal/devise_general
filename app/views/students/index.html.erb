@@ -29,7 +29,12 @@
     <% end %>
   </tbody>
 </table>
-
+<br>
+<% if params[:sort_by] == "fos" %>
+  <%= link_to "Sort by nationality", :action => :create, :sort_by => :nationality %>
+<% else %>
+  <%= link_to "Sort by fos", :action => :create, :sort_by => :fos %>
+<% end %>
 <br>
 
 <%= link_to 'New Student', new_student_path %>

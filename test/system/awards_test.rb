@@ -14,7 +14,7 @@ class AwardsTest < ApplicationSystemTestCase
     visit awards_url
     click_on "New Award"
 
-    fill_in "Cateogry", with: @award.cateogry
+    fill_in "Cateogry", with: @award.category
     fill_in "Description", with: @award.description
     click_on "Create Award"
 
@@ -26,7 +26,7 @@ class AwardsTest < ApplicationSystemTestCase
     visit awards_url
     click_on "Edit", match: :first
 
-    fill_in "Cateogry", with: @award.cateogry
+    fill_in "Cateogry", with: @award.category
     fill_in "Description", with: @award.description
     click_on "Update Award"
 

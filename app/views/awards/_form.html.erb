@@ -13,12 +13,12 @@
 
   <div class="field">
     <%= form.label :description %>
-    <%= form.text_field :description %>
+    <%= form.text_field :description,placeholder: "Eg. Description of the award"%>
   </div>
 
   <div class="field">
-    <%= form.label :cateogry %>
-    <%= form.text_field :cateogry %>
+    <%= form.label :choose_a_cateogry %>
+    <%= form.select :category, ['Academic', 'Sports', 'Music', 'Dancing', 'Singing']%>
   </div>
 
   <div class="actions">

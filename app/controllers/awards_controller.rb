@@ -1,10 +1,11 @@
 class AwardsController < ApplicationController
   before_action :set_award, only: [:show, :edit, :update, :destroy]
-  before_action :set_talent, only: [:create]
+  before_action :set_student, only: [:create]
   # GET /awards
   # GET /awards.json
-  def set_talent
-    @talent = Talent.find(params[:talent_id])
+
+  def set_student
+    @student = Student.find(params[:student_id])
   end
 
   def index
@@ -28,16 +29,21 @@ class AwardsController < ApplicationController
   # POST /awards
   # POST /awards.json
   def create
-    @award = Award.new(award_params)
+    @award = @student.awards.create award_params
 
     respond_to do |format|
       if @award.save
-        format.html { redirect_to @award, notice: 'Award was successfully created.' }
-        format.json { render :show, status: :created, location: @award }
+        format.html { redirect_to @student, notice: 'Award was successfully created.' }
+        format.json { render :show, status: :created, location: @student }
       else
         format.html { render :new }
         format.json { render json: @award.errors, status: :unprocessable_entity }
       end
+    end
+    if params[:sort_by] == "description"
+      @students = Student.order(:description)
+    else
+      @students = Student.order(:category)
     end
   end
 
@@ -73,6 +79,6 @@ class AwardsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def award_params
-      params.require(:award).permit(:description, :cateogry)
+      params.require(:award).permit(:description, :category)
     end
 end
