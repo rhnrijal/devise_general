@@ -21,6 +21,7 @@ class AwardsController < ApplicationController
   # GET /awards/1
   # GET /awards/1.json
   def show
+
   end
 
   # GET /awards/new

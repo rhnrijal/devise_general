@@ -15,6 +15,11 @@
   <%= image_tag @award.image_url,width: '30%' if @award.image?  %>
 
 </p>
+<strong>Talent related video:</strong></p>
+
+<%= video_tag @award.video_url.to_s, controls: true%>
+
+<br/>
 
 <%= link_to 'Edit', edit_award_path(@award) %> |
 <%= link_to 'Back', awards_path %>
