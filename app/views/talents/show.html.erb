@@ -34,7 +34,11 @@
       <%= f.check_box :remove_image %>
     <%end%>
   </div>
-  <div class="actions">
+  <div class="field">
+    <%= f.label :video %><br>
+    <%= f.file_field :video %>
+  </div>
+    <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>

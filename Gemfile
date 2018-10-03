@@ -14,6 +14,10 @@ gem 'jquery-tokeninput-rails'
 gem 'carrierwave', '~> 1.2', '>= 1.2.3'
 gem 'mini_magick', '~> 4.9', '>= 4.9.2'
 
+gem 'carrierwave-video'
+gem 'carrierwave-video-thumbnailer'
+gem 'carrierwave-ffmpeg'
+
 
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
