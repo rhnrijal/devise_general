@@ -11,5 +11,17 @@ pipeline {
                 '''
             }
         }
+		
+		stage('test'){
+			steps {
+			sh '''
+			cd eTalent-app
+			bin/rake db:create
+            bin/rake db:migrate
+            bin/rake test
+		}
+
+        
     }
+
 }
