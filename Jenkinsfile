@@ -14,9 +14,9 @@ pipeline {
 		stage('test'){
 			steps {
 			sh '''
-			bin/rake db:create
-            bin/rake db:migrate
-            bin/rake test
+			RAILS_ENV=test bin/rake db:create
+      RAILS_ENV=test bin/rake db:migrate
+      RAILS_ENV=test bin/rake test
 			'''
 			}
 
