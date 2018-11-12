@@ -6,8 +6,6 @@ pipeline {
         stage('build') {
             steps {
                 sh '''
-                pwd
-                ls
                 bundle install
                 '''
             }
