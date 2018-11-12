@@ -20,9 +20,10 @@ pipeline {
             bin/rake db:migrate
             bin/rake test
 			'''
-		}
+			}
 
         
-    }
+    	}
 
+}
 }
