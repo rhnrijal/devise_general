@@ -6,7 +6,9 @@ pipeline {
         stage('build') {
             steps {
                 sh '''
-                cd Talent-app
+                pwd
+                ls
+                cd eTalent-app
                 bundle install
                 '''
             }
