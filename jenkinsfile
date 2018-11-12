@@ -1,0 +1,4 @@
+
+@admin = Role.create(name: "Admin")
+@member = Role.create(name: "Member")
+
