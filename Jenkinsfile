@@ -8,7 +8,6 @@ pipeline {
                 sh '''
                 pwd
                 ls
-                cd eTalent-app
                 bundle install
                 '''
             }
@@ -17,7 +16,6 @@ pipeline {
 		stage('test'){
 			steps {
 			sh '''
-			cd Talent-app
 			bin/rake db:create
             bin/rake db:migrate
             bin/rake test
