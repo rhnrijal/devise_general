@@ -6,7 +6,7 @@ pipeline {
         stage('build') {
             steps {
                 sh '''
-                cd eTalent-app
+                cd Talent-app
                 bundle install
                 '''
             }
@@ -15,7 +15,7 @@ pipeline {
 		stage('test'){
 			steps {
 			sh '''
-			cd eTalent-app
+			cd Talent-app
 			bin/rake db:create
             bin/rake db:migrate
             bin/rake test
