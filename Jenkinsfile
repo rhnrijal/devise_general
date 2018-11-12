@@ -1,14 +1,14 @@
 pipeline {
     agent {
-        docker { image 'ruby:2.5.1' }
+        dockerfile { filename 'Dockerfile.test' }
     }
     stages {
         stage('build') {
             steps {
-                sh 'ruby --version'
+                sh '''
                 cd eTalent-app
                 bundle install
-
+                '''
             }
         }
     }
