@@ -6,7 +6,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'ruby --version'
-                cd eTalent.app
+                cd eTalent-app
                 bundle install
 
             }
